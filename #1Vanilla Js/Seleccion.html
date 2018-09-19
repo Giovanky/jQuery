@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Seleccion</title>
+</head>
+<body>
+    <h1>Hola Mundo!</h1>
+    <h1 id="principal">Heading 1</h1>
+    <h2 class="heading">Heading 2</h2>
+    <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        //Busqueda en base a un selector
+        var elementos = document.querySelectorAll('li');
+        console.log(elementos);
+        elementos[0].addEventListener('click',function(){
+            console.log('Click');
+        });
+
+        //Buscar en base a clase
+        var heading = document.getElementsByClassName('heading');
+        //console.log(heading);
+
+        //buscar por nombre de etiqueta
+        var ul = document.getElementsByTagName('ul');
+        //console.log(ul);
+
+        //Buscar por id
+        var id = document.getElementById('principal');
+        console.log(id);
+    </script>
+</body>
+</html>
